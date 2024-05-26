@@ -15,6 +15,9 @@
       margin: 0;
       padding: 0;
       color: #333; /* Color de texto principal */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     /* Estilos CSS específicos del chat */
@@ -51,6 +54,13 @@
     .options button {
       margin-right: 8px;
     }
+
+    /* Estilos del video */
+    video {
+      margin-top: 20px;
+      width: 300px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -75,6 +85,12 @@
       <button onclick="sendMessage('3')">Tratamiento Capilar</button>
     </div>
   </div>
+
+  <!-- Video local -->
+  <video controls>
+    <source src="fernet.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
 
   <script src="script.js"></script>
 </body>
