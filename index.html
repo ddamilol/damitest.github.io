@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos CSS del fondo personalizado */
+    body {
+      background-image: url('walpaper.png');
+      background-size: 95% 95%;
+      background-position: center;
+      font-family: Arial, sans-serif; /* Fuentes de texto */
+      margin: 0;
+      padding: 0;
+      color: #333; /* Color de texto principal */
+    }
+
+    /* Estilos CSS específicos del chat */
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+    .user-status {
+      color: #4CAF50; /* verde */
+    }
+    .message {
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 8px;
+      max-width: 70%;
+    }
+    .received {
+      background-color: #DCF8C6; /* verde claro */
+      align-self: flex-start;
+    }
+    .message-content a {
+      color: #075E54; /* verde azulado */
+      text-decoration: none;
+    }
+    .options {
+      margin-top: 16px;
+    }
+    .options button {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Encabezado de usuario -->
+    <div class="header">
+      <img class="avatar" src="banapelado.png">
+      <div class="user-info">
+        <div class="user-name">Bana</div>
+        <div class="user-status">En línea</div>
+      </div>
+    </div>
+    
+    <div id="chat-display" class="chat-display">
+      <div class="message received">
+        <span class="message-content">hola papu! Soy <a href='https://small.fileditchstuff.me/s11/mrhEnlhVTcRgVXehhVvA.jpeg' target='_blank'>Bana</a>, el mas rico y pecheador de argentina, ¿qué necesitas?</span>
+      </div>
+    </div>
+    <div class="options">
+      <button onclick="sendMessage('1')">Banacash</button>
+      <button onclick="sendMessage('2')">Multiplicador</button>
+      <button onclick="sendMessage('3')">Tratamiento Capilar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
